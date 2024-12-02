@@ -44,6 +44,7 @@ sans-serif;*/
    --morado: rgb(174, 0, 255);
    --degradado: linear-gradient(var(--orange), var(--morado));
    --degradado2: linear-gradient(rgb(110, 197, 190), rgb(238, 160, 59));
+   --degradado3: linear-gradient(rgba(223, 255, 252, 0.507), rgba(238, 160, 59, 0.534));
 }
 
 *{
@@ -115,7 +116,7 @@ section{
 
 .heading{
    text-align: center;
-   background: var(--degradado);
+   background: rgb(110, 197, 190);
    color: transparent;
    -webkit-background-clip: text;
    background-clip: text;
@@ -184,8 +185,8 @@ header label{
    display: flex;
    align-items: center;
    justify-content: space-evenly;
-   /*background: url(./img/fondo2.jpg) no-repeat;*/
-   background-color: white;
+   background: url(./img/4058187.jpg) no-repeat;
+   /*background-color: white;*/
    background-size: cover;
    background-position: center;
 }
@@ -227,16 +228,16 @@ header label{
 .inicio .content h3{
    font-size: 2.3rem;
    color: rgb(110, 197, 190);
-   text-shadow: 0px 0px 30px  rgb(0, 0, 0, 0.3);
+   text-shadow: 0px 0px 30px  rgb(0, 0, 0, 0.7);
    text-transform: uppercase;
 }
 
 .inicio .content > span{
-   color: rgb(110, 197, 190);
+   color: rgb(255, 160, 36);
    font-size: 1rem;
    margin: 3rem 0;
    text-transform: uppercase;
-   text-shadow: 0px 0px 20px rgb(0, 0, 0);
+   text-shadow: 0px 0px 10px rgb(0, 0, 0, 0.7);
    font-family: 'Kanit';
 }
 
@@ -244,10 +245,10 @@ header label{
    margin: 1rem 0;
    font-size: 1.2rem;
    font-family: 'Roboto Condensed';
-   color: rgb(255, 255, 255);
+   color: black;
    padding: 0 1rem;
    text-transform: none;
-   text-shadow: 0px 0px 15px rgb(0, 0, 0);
+   /*text-shadow: 0px 0px 15px rgb(0, 0, 0);*/
 }
 
 .acercade .caja-contenedor{
@@ -259,7 +260,7 @@ header label{
 
 .acercade .caja-contenedor .caja{
    flex: 1 1 20rem;
-   background: linear-gradient(rgb(0, 248, 248, 0.4), rgba(153, 0, 255, 0.4));
+   background: var(--degradado3);
    border-radius: 0.5rem;
    border: .1rem solid rgba(22, 18, 18, 0.2);
    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
@@ -272,7 +273,7 @@ header label{
 
 .acercade .caja-contenedor .caja h3{
    font-size: 1.6rem;
-   color: rgb(255, 208, 0);
+   color: rgb(223, 96, 12);
    text-shadow: 0 0 10px black;
 }
 
@@ -289,7 +290,7 @@ header label{
 }
 
 .aprender{
-   background: url(./img/stars3.jpg) no-repeat;
+   background: url(./img/4058187.jpg) no-repeat;
    background-size: cover;
    background-position: center;
    padding-bottom: 1rem;
@@ -316,7 +317,7 @@ header label{
 }
 .aprender .columna .content h3{
    font-size: 1.4rem;
-   color: rgb(255, 255, 255);
+   color: rgb(255, 160, 36);
    text-transform: none;
    text-shadow: 0 0 10px black;
    font-weight: lighter;
@@ -354,16 +355,17 @@ header label{
 }
 
 .aprender .columna .suscribete h3{
-   color: aliceblue;
+   color: rgb(255, 160, 36);
    font-size: 1.5rem;
    text-transform: uppercase;
 }
 
 .aprender .columna .suscribete p{
-   color: antiquewhite;
+   color: rgb(255, 160, 36);
    font-size: 1rem;
    margin: 1rem auto;
    width: auto;
+   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .aprender .columna .suscribete form{
@@ -419,7 +421,7 @@ header label{
 
 .coleccion .caja-contenedor .caja{
    flex: 1 1 18rem;
-   background: linear-gradient(90deg, rgba(0, 255, 191, 0.829), rgba(0, 217, 255, 0.747));
+   background: var(--degradado3);
    /*width: 30%;*/
    height: 100%;
    margin: 1rem;
@@ -446,7 +448,7 @@ header label{
    transform: scale(1.2);
 }
 .coleccion .caja-contenedor .caja .comentarios h3{
-   color: var(--morado);
+   color: rgb(110, 197, 190);
    font-size: 2rem;
    padding-bottom: .5rem;
 }
