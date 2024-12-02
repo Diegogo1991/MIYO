@@ -2,13 +2,13 @@
 var dibujo = 0;
 
 var camAnimals = document.getElementById('camAnimals');
-var dibujosAnimales = 4;
+var dibujosAnimales = 11;
 function camAnimales() {
    dibujo = dibujo + 1;
    if (dibujo > dibujosAnimales) {
       dibujo = 0;
    }
-   document.getElementById('animales').src = `./img/amls/${dibujo}.jpg`;
+   document.getElementById('animales').src = `./img/pantallas/${dibujo}.webp`;
 }
 camAnimals.addEventListener('click', camAnimales);
 
