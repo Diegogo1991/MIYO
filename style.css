@@ -217,6 +217,11 @@ header label{
    max-width: 100%;
    height: auto;
    /*animation: float 2.5s linear infinite;*/
+   transition: all .2s linear;
+}
+
+.inicio .image .img:hover{
+   transform: scale(1.2);
 }
 
 /*@keyframes float{
@@ -455,6 +460,7 @@ header label{
 .coleccion .caja-contenedor .caja .carro img:hover{
    transform: scale(1.2);
 }
+
 .coleccion .caja-contenedor .caja .comentarios h3{
    color: rgb(110, 197, 190);
    font-size: 2rem;
