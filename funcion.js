@@ -8,7 +8,7 @@ function camAnimales() {
    if (dibujo > dibujosAnimales) {
       dibujo = 0;
    }
-   document.getElementById('animales').src = `./img/pantallas/${dibujo}.webp`;
+   document.getElementById('animales').src = `./img/pantallas/${dibujo}.jpg`;
 }
 camAnimals.addEventListener('click', camAnimales);
 

@@ -189,7 +189,7 @@ header label{
 .inicio{
    display: flex;
    align-items: center;
-   justify-content: space-evenly;
+   justify-content: space-between;
    /*background: url(./img/4058187.jpg) no-repeat;*/
    /*background-color: white;*/
    background-size: cover;
@@ -202,17 +202,16 @@ header label{
    width: 50%;
    justify-content: center;
    align-items: center;
-   flex: row;
 }
 
 .inicio .image{
    display: flex;
-   flex: 1;
+   flex-direction: column;
    align-items: center;
-   justify-content: center;
    flex-direction: column;
    width: 50%;
-   overflow: hidden;
+   max-height: 80vh;
+   overflow-y: scroll;
 }
 .inicio .image img{
    max-width: 100%;
@@ -741,7 +740,7 @@ header label{
 }
 
 
-@media(max-width: 768px) {
+@media(max-width: 800px) {
    header label {
       visibility: visible;
       opacity: 1;
@@ -780,6 +779,8 @@ header label{
    }
 
    .inicio .content{
+      flex: 1;
+      max-height: 50%;
       width: 100%;
       align-items: center;
       justify-content: center;
@@ -791,13 +792,32 @@ header label{
    }
 
    .inicio .image{
-      max-height: 100%;
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      overflow-y: hidden;
+      max-height: 50%;
       width: auto;
+      position: relative;
    }
 
    .inicio .image img{
       width: 25vh;
+      object-fit: cover;
    }
+
+   section.inicio .image .scroll-container {
+      display: flex;
+      overflow-x: scroll;
+      display: flex;
+      height: 100%;
+      width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+      scroll-behavior: smooth; /* Desplazamiento suave */
+   }
+
+   .inicio .image .scroll-container::-webkit-scrollbar {
+      display: none; /* Oculta el scroll en Chrome/Safari */
+    }
 
    .inicio .content h3{
       font-size: 1.5rem;
