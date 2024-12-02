@@ -214,16 +214,20 @@ header label{
    overflow-y: scroll;
    overflow-x: hidden;
 }
+
+.inicio .image::-webkit-scrollbar{
+   width: 7px;
+}
+
+.inicio .image::-webkit-scrollbar-thumb{
+   background-color: orange;
+   border-radius: 5px;
+}
+
 .inicio .image img{
    max-width: 100%;
    height: auto;
    /*animation: float 2.5s linear infinite;*/
-   transition: all .2s linear;
-}
-
-.inicio .image img:hover{
-   transform: scale(1.4);
-   overflow-x: hidden;
 }
 
 /*@keyframes float{
@@ -802,15 +806,28 @@ header label{
    .inicio .image{
       display: flex;
       flex: 1;
+      align-items: center;
       flex-direction: row;
       overflow-y: hidden;
-      max-height: 50%;
+      overflow-x: scroll;
+      max-height: 50vh;
       width: auto;
       position: relative;
+      margin-bottom: 2rem;
+   }
+
+   .inicio .image::-webkit-scrollbar{
+      height: 7px;
+   }
+   
+   .inicio .image::-webkit-scrollbar-thumb{
+      background-color: orange;
+      border-radius: 5px;
    }
 
    .inicio .image img{
-      width: 25vh;
+      max-height: 100%;
+      width: auto;
       object-fit: cover;
    }
 

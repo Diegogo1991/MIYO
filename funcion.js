@@ -12,28 +12,6 @@ function camAnimales() {
 }
 camAnimals.addEventListener('click', camAnimales);
 
-var camAutos = document.getElementById('camAutos');
-var dibujosCarros = 3;
-function camAautos() {
-   dibujo = dibujo + 1;
-   if (dibujo > dibujosCarros) {
-      dibujo = 0;
-   }
-   document.getElementById('autos').src = `./img/crrs/${dibujo}.jpg`;
-}
-camAutos.addEventListener('click', camAautos);
-
-
-var camVarios = document.getElementById('camVarios');
-var dibujosVarios = 7;
-function camVarioos() {
-   dibujo = dibujo + 1;
-   if (dibujo > dibujosVarios) {
-      dibujo = 0;
-   }
-   document.getElementById('varios').src = `./img/vrdo/${dibujo}.jpg`;
-}
-camVarios.addEventListener('click', camVarioos);
 
 /*fondeador1.addEventListener('click', cambiarFondo);
 fondeador2.addEventListener('click', cambiarFondo);*/
@@ -163,3 +141,5 @@ formContact.addEventListener('submit', (e) => {
 
    }
 })
+
+//FUNCION PARA DESAPARECER AUTOMATICAMENTE EL NAVBAR
