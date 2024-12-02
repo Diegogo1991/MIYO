@@ -44,7 +44,7 @@ sans-serif;*/
    --morado: rgb(174, 0, 255);
    --degradado: linear-gradient(var(--orange), var(--morado));
    --degradado2: linear-gradient(rgb(110, 197, 190), rgb(238, 160, 59));
-   --degradado3: linear-gradient(rgba(223, 255, 252, 0.507), rgba(238, 160, 59, 0.534));
+   --degradado3: linear-gradient(rgba(223, 255, 252, 0.507), rgba(238, 177, 97, 0.534));
 }
 
 *{
@@ -79,7 +79,7 @@ html{
 
 body{
    /*background: white; PROBANDO*/
-   background: url(./img/4058187.jpg) no-repeat;
+   background: url(./img/40581877.jpg) no-repeat;
    background-size: cover; /* Asegura que el fondo cubra toda el área visible */
     background-position: center; /* Centra la imagen */
     background-attachment: fixed; 
@@ -120,10 +120,11 @@ section{
 
 .heading{
    text-align: center;
-   background: rgb(110, 197, 190);
-   color: transparent;
-   -webkit-background-clip: text;
-   background-clip: text;
+   color: rgb(119, 218, 209);
+   text-shadow: 0px 0px 15px rgb(0, 0, 0);
+   /*background: rgb(119, 218, 209);*/
+   /*-webkit-background-clip: text;*/
+   /*background-clip: text;*/
    font-size: 1.9rem;
    text-transform: uppercase;
    padding: 1rem;
@@ -231,9 +232,10 @@ header label{
 
 .inicio .content h3{
    font-size: 2.3rem;
-   color: rgb(72, 172, 163);
+   color: rgb(85, 212, 202);
    text-shadow: 0px 0px 30px  rgba(255, 255, 255, 0.7);
    text-transform: uppercase;
+   text-shadow: 0px 0px 15px rgb(0, 0, 0);
 }
 
 .inicio .content > span{
@@ -248,11 +250,10 @@ header label{
 .inicio .content p{
    margin: 1rem 0;
    font-size: 1.2rem;
-   font-family: 'Roboto Condensed';
-   color: black;
+   color: white;
    padding: 0 1rem;
    text-transform: none;
-   /*text-shadow: 0px 0px 15px rgb(0, 0, 0);*/
+   text-shadow: 0px 0px 15px rgb(0, 0, 0);
 }
 
 .acercade .caja-contenedor{
@@ -278,7 +279,9 @@ header label{
 .acercade .caja-contenedor .caja h3{
    font-size: 1.6rem;
    color: rgb(223, 96, 12);
-   text-shadow: 0 0 10px black;
+   text-shadow: 0 0 15px rgb(0, 0, 0, 0.7);
+   font-weight: lighter;
+   
 }
 
 .acercade .caja-contenedor .caja img{
@@ -360,8 +363,9 @@ header label{
 
 .aprender .columna .suscribete h3{
    color: rgb(255, 160, 36);
-   font-size: 1.5rem;
+   font-size: 1rem;
    text-transform: uppercase;
+   text-shadow: 0 0 15px black;
 }
 
 .aprender .columna .suscribete p{
@@ -521,6 +525,7 @@ header label{
    font-size: 1rem;
    color: rgb(255, 255, 255);
    padding: .4rem 0;
+   text-shadow: 0 0 10px rgb(0, 0, 0, 0.6);
 }
 
 .clases .caja-contenedor .caja ul li .fa-square-check{
